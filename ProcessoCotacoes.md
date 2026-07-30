@@ -8,17 +8,38 @@
 
 ### Analise de Produto em Cotacao
 - Multiple paths: Análise Técnica -> Análise de Risco/Clínica
-  - Combined paths: Path with condition 'tw.local.pAccao == "Analise Risco", appended  ' || tw.local.pAccao == "Aceitação Clínica"'
+  - Combined paths:
+      ```javascript
+      //before
+      tw.local.pAccao == "Analise Risco"
+
+      //after
+      tw.local.pAccao == "Analise Risco" || tw.local.pAccao == "Aceitação Clínica"
+      ```
   - FIXED-BPD: Combined conditions on same path
 
 ### Simulacao com Pedido de Aceitacao
 - Multiple paths: Aceitação Técnica -> AtualizaEstadoSimulador_2
-  - Combined paths: Path with condition '(tw.local.pAcao=="Rejeicao" || (tw.local.pAcao=="Submeter Decisão" && tw.local.pEstadoCotacao.Status=="REJECTED"))", appended with  ' || (tw.local.pAcao=="Pedir Cotacao")', and appended with ' ||  (tw.local.pAcao== "Converter Processo Cotações")'
+  - Combined paths: 
+      ```javascript
+        //before
+        (tw.local.pAcao=="Rejeicao" || (tw.local.pAcao=="Submeter Decisão" && tw.local.pEstadoCotacao.Status=="REJECTED"))
+
+        //after
+        (tw.local.pAcao=="Rejeicao" || (tw.local.pAcao=="Submeter Decisão" && tw.local.pEstadoCotacao.Status=="REJECTED")) || (tw.local.pAcao=="Pedir Cotacao") ||  (tw.local.pAcao== "Converter Processo Cotações")
+        ```
   - FIXED-BPD: Combined conditions on same path
 
 ### Renegociacao de Contrato
 - Multiple paths: Revisão Comercial -> Análise Técnica
   - Combined paths: Path with condition 'tw.local.pAcao == "ValidadeExpirada"', appended with  ' || tw.local.pAcao == "Solicitar Reavaliacao"'
+      ```javascript
+        //before
+        tw.local.pAcao == "ValidadeExpirada"
+
+        //after
+        tw.local.pAcao == "ValidadeExpirada" || tw.local.pAcao == "Solicitar Reavaliacao"
+        ```
   - FIXED-BPD: Combined conditions on same path
 
 ### Analise de Produto em Cotacao > Analise Tecnica
