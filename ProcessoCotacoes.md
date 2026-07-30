@@ -70,6 +70,23 @@
       </messageVariables> 
     </code>
     ```
+    **`2026-07-30, by Gemini`**  
+    > **Why Is This Happening?**  
+        - When you attempt to create or attach a document using the BPM Document Store (or a Content Integration step), IBM BPM checks if the process instance has an initialized Process Instance Folder set up to receive local files.  
+        This error happens due to one of three main reasons:  
+          1. Local Documents Disabled in Process Settings:  
+          The process definition (Pedido de Cotações) does not have the "Allow locally managed documents" setting enabled on its Folders tab.  
+          2. Server/Target Misconfiguration in ECM Integration:  
+          If your intention was to upload the document to an External ECM Server (e.g., FileNet, Alfresco, SharePoint), your Content Integration step or JavaScript service might be accidentally targeting the local BPM Document Store or attempting to attach the file to the local instance folder instead of the external repository.  
+          3. Instance Created Before Settings Were Changed:  
+        The error specifically references the Tip snapshot. If you recently updated the folder settings in Process Designer, the running instance (2072.71507) was created before those changes were deployed, meaning it lacks the required folder structure.  
+      **How to Fix It**  
+        Option A: If you intended to store local documents inside BPMIf the document is meant to be managed locally within the BPM instance:
+        - Open your Process Application (Processos de Cotacoes) in IBM Process Designer.Open the process definition Pedido de Cotações.
+        - Go to the Folders tab.  Under Folder Management, ensure that Allow locally managed documents is checked.  Save your changes and create a new process instance to test. (Existing running instances created prior to this change will still fail because their instance folder structure was created at launch time.)
+
+    **`Analise de Produto em Cotacao, Folder tab`**  
+    ![`Analise de Produto em Cotacao, Folder tab`](images/problemaECM_01.png)
   - TODO: ...
 
 ### Alteracoes ao Contrato
