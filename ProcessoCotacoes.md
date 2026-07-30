@@ -27,7 +27,7 @@
 
         //after
         (tw.local.pAcao=="Rejeicao" || (tw.local.pAcao=="Submeter Decisão" && tw.local.pEstadoCotacao.Status=="REJECTED")) || (tw.local.pAcao=="Pedir Cotacao") ||  (tw.local.pAcao== "Converter Processo Cotações")
-        ```
+      ```
   - FIXED-BPD: Combined conditions on same path
 
 ### Renegociacao de Contrato
@@ -39,7 +39,7 @@
 
         //after
         tw.local.pAcao == "ValidadeExpirada" || tw.local.pAcao == "Solicitar Reavaliacao"
-        ```
+      ```
   - FIXED-BPD: Combined conditions on same path
 
 ### Analise de Produto em Cotacao > Analise Tecnica
