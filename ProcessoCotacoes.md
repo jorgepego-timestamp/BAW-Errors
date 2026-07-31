@@ -95,7 +95,7 @@
   **`Decision Requer Análise Técnica`**  
   ![`Requer Análise Técnica`](images/DecisionRequerAnaliseTecnica.png)
 
-  - TODO: Foram efectuados testes para todas ramificações da decisão, e em cada variação, o fluxo foi encaminhado correctamente
+  - NOT-APPLY: Foram efectuados testes para todas ramificações da decisão, e em cada variação, o fluxo foi encaminhado correctamente
 
 ### Avaliacao de Risco Pessoais
 - (Converted) Process inside BPDs  

@@ -11,6 +11,8 @@ Situações que não são susceptíveis de intervenção
 - [Registo Assinatura Digital](./ProcessoCotacoes.md#registo-assinatura-digital)  
 - [Registo e Envio Questionário](./ProcessoCotacoes.md#registo-e-envio-questionario)  
 - [Formulários de Risco (Pedido de Cotação)](./ProcessoCotacoes.md#formularios-de-risco--pedido-de-cotacao)  
+- [Alteracoes ao Contrato](./ProcessoCotacoes.md#alteracoes-ao-contrato)  
+
 
 ### NOT-FIXED
 Situações que não foram possíveis de corrigir, em dado momento, ou que podem causar disrupções
@@ -38,10 +40,7 @@ Situações corrigidas no âmbito da conversão BPDs
 - [Renegociacao de Contrato](./ProcessoCotacoes.md#renegociacao-de-contrato)
 
 
-
-
 ### TODO
 Situações pendentes de testes, investigação, ou intervenções pendentes
 
 - [Análise de Produto em Cotação > Análise Técnica](./ProcessoCotacoes.md#analise-de-produto-em-cotacao--analise-tecnica)  
-- [Alteracoes ao Contrato](./ProcessoCotacoes.md#alteracoes-ao-contrato)  
