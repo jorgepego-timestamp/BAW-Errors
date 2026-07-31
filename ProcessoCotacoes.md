@@ -154,7 +154,7 @@ deve estar em produção já assim. Confirmado que não é um comportamento igua
   - NOT-APPLY: *"sim, esse caso é normal, foi um pedido da área para ser texto e não dateTimePicker"*
 
 
-- Evidenciados erros validação, logo ao iniciar ecra
+- Evidenciados erros validação, logo ao iniciar ecra  
 ![](images/formRisco_VidaIndividualCapitalizacao.png)  
   - NOT-APPLY: *"Responsabilidade Civil - Responsabilidade Civil Decisão Segura este como te disse, é para descartar, igualmente para o Mercancias Temporarias. Estes dois podes colocar como sem efeito. Não estão em uso atualmente. deixa-me ver esses outros casos que identificas. Os dois de Vida. para os outros formulários de risco, repliquei em Qualidade, e o comportamento é o mesmo. Haverá uma justificação para isso, e tenho uma suspeita, mas eves descartar também nestes dois formulários de vida o tema, como sendo decorrente da migração."*
 
