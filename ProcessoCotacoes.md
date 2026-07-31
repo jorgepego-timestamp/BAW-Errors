@@ -91,11 +91,11 @@
 
 ### Alteracoes ao Contrato
 - Multiple paths on Decision: Requer Análise Técnica -> Serviço - Envio Notificações  
-- TODO:   
-      
+        
   **`Decision Requer Análise Técnica`**  
   ![`Requer Análise Técnica`](images/DecisionRequerAnaliseTecnica.png)
 
+  - TODO: Foram efectuados testes para todas ramificações da decisão, e em cada variação, o fluxo foi encaminhado correctamente
 
 ### Avaliacao de Risco Pessoais
 - (Converted) Process inside BPDs  
